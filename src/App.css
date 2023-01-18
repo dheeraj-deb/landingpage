@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --very-dark-blue: hsl(243, 87%, 12%);
+  --desaturated-blue: hsl(238, 22%, 44%);
+  --bright-blue: hsl(224, 93%, 58%);
+  --moderate-cyan: hsl(170, 45%, 43%);
+  --light-grayish-blue: hsl(240, 75%, 98%);
+  --light-gray: hsl(0, 0%, 75%);
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: 'Open Sans', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+p {
+  line-height: 1.8;
+  color: var(--desaturated-blue);
+  font-size: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+h1,
+h2 {
+  /* color: var(--very-dark-blue); */
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+li {
+  color: var(--desaturated-blue);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.btn {
+  background-color: var(--bright-blue);
+}
+
+.link {
+  color: var(--moderate-cyan);
+}
+
+.cta {
+  background-color: var(--desaturated-blue);
+}
+
+footer {
+  background-color: var(--very-dark-blue);
+}
+
+@media (min-width: 1024px) {
+  p {
+    font-size: 16px;
   }
 }
